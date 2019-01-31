@@ -293,6 +293,18 @@ escape-string-regexp@^1.0.5:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-1.0.5.tgz#1b61c0562190a8dff6ae3bb2cf0200ca130b86d4"
   integrity sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
 
+eslint-config-a1motion@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-a1motion/-/eslint-config-a1motion-1.0.1.tgz#d99eeb2436baa22f6850a6720d88d5a6641847de"
+  integrity sha512-BkNp8B+09E3ZHQ69+d/c7Y7adJ76ADVGlQ3JxZewd7VGFlW0M7X5GhKkRnqMM3s9d/Tx2cB2AKygZNUqSpUMtA==
+  dependencies:
+    babel-eslint "^10.0.1"
+    eslint "^5.12.1"
+    eslint-config-prettier "^4.0.0"
+    eslint-plugin-prettier "^3.0.1"
+    eslint-plugin-react "^7.12.4"
+    prettier "^1.16.1"
+
 eslint-config-prettier@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-4.0.0.tgz#16cedeea0a56e74de60dcbbe3be0ab2c645405b9"

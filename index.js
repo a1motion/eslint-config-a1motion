@@ -20,7 +20,6 @@ module.exports = {
   },
   rules: {
     'max-len': 0,
-    semi: [2, `never`],
     'no-alert': 0,
     'no-await-in-loop': 0,
     'no-restricted-syntax': [
@@ -63,7 +62,7 @@ module.exports = {
         trailingComma: `es5`,
         singleQuote: true,
         printWidth: 80,
-        semit: false,
+        semi: false,
       },
     ],
   },
