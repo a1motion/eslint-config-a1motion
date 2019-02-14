@@ -10,7 +10,6 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: [`prettier`],
   env: {
     browser: true,
     node: true,
@@ -18,6 +17,16 @@ module.exports = {
     jest: true,
     es6: true,
   },
+  settings: {
+    react: {
+      createClass: `createReactClass`,
+      pragma: `React`,
+      version: `detect`,
+    }
+  },
+  plugins: [
+    `prettier`
+  ],
   rules: {
     // Possible Errors
     "for-direction": 2,
@@ -36,7 +45,7 @@ module.exports = {
     "no-empty-character-class": 2,
     "no-ex-assign": 2,
     "no-extra-boolean-cast": 2,
-    "no-extra-parens": 2,
+    "no-extra-parens": 0,
     "no-extra-semi": 2,
     "no-func-assign": 2,
     "no-invalid-regexp": 2,
@@ -63,7 +72,7 @@ module.exports = {
     "consistent-return": 2,
     curly: [2, `all`],
     "default-case": 1,
-    "dot-location": [2, `object`],
+    "dot-location": [2, `property`],
     "dot-notation": 2,
     eqeqeq: [2, `always`],
     "guard-for-in": 2,
@@ -85,7 +94,7 @@ module.exports = {
     "no-global-assign": 2,
     "no-implicit-coercion": 0,
     "no-implied-eval": 2,
-    "no-invalid-this": 2,
+    "no-invalid-this": 0,
     "no-iterator": 2,
     "no-lone-blocks": 2,
     "no-multi-spaces": 2,
@@ -95,7 +104,7 @@ module.exports = {
     "no-new-wrappers": 2,
     "no-octal": 2,
     "no-octal-escape": 2,
-    "no-param-reassign": 2,
+    "no-param-reassign": 0,
     "no-proto": 2,
     "no-redeclare": 2,
     "no-restricted-properties": 2,
