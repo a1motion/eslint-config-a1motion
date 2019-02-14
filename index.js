@@ -24,7 +24,7 @@ module.exports = {
     'getter-return': 2,
     'no-await-in-loop': 0,
     'no-compare-neg-zero': 2,
-    'no-cond-assign': `always`,
+    'no-cond-assign': [2,`always`],
     'no-console': 0,
     'no-constant-condition': 2,
     'no-control-regex': 2,
