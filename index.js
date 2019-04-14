@@ -140,6 +140,13 @@ module.exports = {
     "object-shorthand": 2,
     "react/prop-types": 0,
     "react/display-name": 0,
+    "react/jsx-curly-brace-presence": [
+      2,
+      {
+        props: `always`,
+        children: `always`,
+      },
+    ],
     "no-unused-vars": 1,
     "prettier/prettier": [
       `error`,
