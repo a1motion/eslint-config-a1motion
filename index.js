@@ -144,7 +144,7 @@ module.exports = {
       2,
       {
         props: `always`,
-        children: `always`,
+        children: `ignore`,
       },
     ],
     "no-unused-vars": 1,
