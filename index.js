@@ -22,11 +22,9 @@ module.exports = {
       createClass: `createReactClass`,
       pragma: `React`,
       version: `detect`,
-    }
+    },
   },
-  plugins: [
-    `prettier`
-  ],
+  plugins: [`prettier`],
   rules: {
     // Possible Errors
     "for-direction": 2,
@@ -150,8 +148,8 @@ module.exports = {
         printWidth: 80,
         semi: false,
         jsxBracketSameLine: true,
-        arrowParens: true,
-        endOfLine: 'lf',
+        arrowParens: `always`,
+        endOfLine: `lf`,
       },
     ],
   },
