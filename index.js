@@ -153,7 +153,7 @@ module.exports = {
       {
         trailingComma: `es5`,
         printWidth: 80,
-        semi: false,
+        semi: true,
         jsxBracketSameLine: true,
         arrowParens: `always`,
         endOfLine: `lf`,
