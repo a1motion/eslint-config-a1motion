@@ -1,5 +1,10 @@
 module.exports = {
-  extends: [`eslint:recommended`, `plugin:react/recommended`, `prettier`],
+  extends: [
+    `eslint:recommended`,
+    `plugin:react/recommended`,
+    `prettier`,
+    `prettier/react`,
+  ],
   parser: `babel-eslint`,
   parserOptions: {
     ecmaVersion: 8,
@@ -24,7 +29,7 @@ module.exports = {
       version: `detect`,
     },
   },
-  plugins: [`prettier`],
+  plugins: [`react`, `prettier`],
   rules: {
     // Possible Errors
     "for-direction": 2,
@@ -138,15 +143,6 @@ module.exports = {
     "no-var": 2,
     "no-this-before-super": 2,
     "object-shorthand": 2,
-    "react/prop-types": 0,
-    "react/display-name": 0,
-    "react/jsx-curly-brace-presence": [
-      2,
-      {
-        props: `always`,
-        children: `ignore`,
-      },
-    ],
     "no-unused-vars": 1,
     "prettier/prettier": [
       `error`,
@@ -159,5 +155,30 @@ module.exports = {
         endOfLine: `lf`,
       },
     ],
+    "padding-line-between-statements": [
+      2,
+      {
+        blankLine: `always`,
+        prev: `*`,
+        next: [`export`, `cjs-export`],
+      },
+      {
+        blankLine: `always`,
+        prev: [`import`, `cjs-import`],
+        next: `*`,
+      },
+      {
+        blankLine: `never`,
+        prev: [`import`, `cjs-import`],
+        next: [`import`, `cjs-import`],
+      },
+      {
+        blankLine: `always`,
+        prev: `multiline-block-like`,
+        next: `*`,
+      },
+    ],
+    ...require(`./rules/react`),
+    ...require(`./rules/jsx`),
   },
 };
