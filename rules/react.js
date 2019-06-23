@@ -41,7 +41,6 @@ module.exports = {
       ],
     },
   ],
-  "react/static-property-placement": [2, `static public field`],
   "react/style-prop-object": [2],
   "react/prop-types": [0],
   "react/void-dom-elements-no-children": [2],
