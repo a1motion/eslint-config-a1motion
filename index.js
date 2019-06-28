@@ -113,12 +113,7 @@ module.exports = {
     "no-restricted-properties": 2,
     "no-return-assign": 2,
     "max-len": 0,
-    "no-restricted-syntax": [
-      2,
-      `ForInStatement`,
-      `LabeledStatement`,
-      `WithStatement`,
-    ],
+    "no-restricted-syntax": [2, `LabeledStatement`, `WithStatement`],
     quotes: [
       2,
       `backtick`,
