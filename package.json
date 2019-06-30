@@ -3,6 +3,7 @@
   "version": "2.1.2",
   "main": "index.js",
   "license": "MIT",
+  "bin": "./install.js",
   "scripts": {
     "lint": "eslint '**/*.js'",
     "test": "exit 0;"
