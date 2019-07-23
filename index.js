@@ -1,16 +1,25 @@
-const base = require(`./base`);
-
-base.extends = base.extends.concat([
-  `plugin:react/recommended`,
-  `prettier/react`,
-]);
-
-base.plugins = base.plugins.concat([`react`]);
-
-base.rules = {
-  ...base.rules,
-  ...require(`./rules/react`),
-  ...require(`./rules/jsx`),
+module.exports = {
+  extends: [`eslint:recommended`, `prettier`],
+  parser: `babel-eslint`,
+  parserOptions: {
+    ecmaVersion: 8,
+    ecmaFeatures: {
+      experimentalObjectRestSpread: true,
+      impliedStrict: true,
+      classes: true,
+      jsx: true,
+    },
+  },
+  env: {
+    browser: true,
+    node: true,
+    jquery: true,
+    jest: true,
+    es6: true,
+  },
+  settings: {},
+  plugins: [`prettier`],
+  rules: {
+    ...require(`./rules/base`),
+  },
 };
-
-module.exports = base;
