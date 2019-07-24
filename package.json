@@ -3,6 +3,10 @@
   "version": "3.0.0",
   "main": "index.js",
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/a1motion/eslint-config-a1motion",
+    "type": "git"
+  },
   "bin": "./install.js",
   "scripts": {
     "lint": "eslint '**/*.js'",
