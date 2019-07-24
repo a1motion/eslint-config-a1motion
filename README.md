@@ -24,6 +24,12 @@ yarn add --dev eslint-config-a1motion
 ```
 
 ## typescript
+
+### install dependencies
+```
+./node_modules/.bin/eslint-config-a1motion typescript
+```
+
 ```json
 {
   "extends": ["a1motion/typescript"]
@@ -31,8 +37,14 @@ yarn add --dev eslint-config-a1motion
 ```
 
 ## typescript with react
+
+### install dependencies
+```
+./node_modules/.bin/eslint-config-a1motion typescript
+```
+
 ```json
 {
-  "extends": ["a1motion/typescript"]
+  "extends": ["a1motion/typescript-react"]
 }
 ```
