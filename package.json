@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-a1motion",
-  "version": "2.2.1",
+  "version": "3.0.0",
   "main": "index.js",
   "license": "MIT",
   "bin": "./install.js",
