@@ -1,6 +1,7 @@
 const base = require(`./index`);
 
 const react = {
+  ...base,
   extends: [...base.extends, `plugin:react/recommended`, `prettier/react`],
   plugins: [...base.plugins, `react`],
   rules: {
