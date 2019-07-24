@@ -26,8 +26,9 @@ module.exports = {
       "@typescript-eslint/parser": [`.ts`, `.tsx`],
     },
   },
-  plugins: [`@typescript-eslint`, `prettier`],
+  plugins: [`prettier`, `@typescript-eslint`],
   rules: {
     ...require(`./rules/base`),
+    ...require(`./rules/ts`),
   },
 };

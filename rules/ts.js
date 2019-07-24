@@ -1,4 +1,5 @@
 module.exports = {
+  "@typescript-eslint/adjacent-overload-signatures": `error`,
   "@typescript-eslint/array-type": [`error`, `array-simple`],
   "@typescript-eslint/ban-types": [
     `error`,
@@ -30,6 +31,9 @@ module.exports = {
       },
     },
   ],
+  camelcase: `off`,
+  "@typescript-eslint/camelcase": [`error`, { properties: `always` }],
+  "@typescript-eslint/class-name-casing": `error`,
   "@typescript-eslint/explicit-function-return-type": [
     `error`,
     {
@@ -37,21 +41,35 @@ module.exports = {
       allowTypedFunctionExpressions: true,
     },
   ],
-  indent: `off`,
-  "@typescript-eslint/indent": [`error`, 2],
+  "@typescript-eslint/member-delimiter-style": [
+    `error`,
+    {
+      multiline: {
+        delimiter: `semi`,
+        requireLast: true,
+      },
+      singleline: {
+        delimiter: `semi`,
+        requireLast: true,
+      },
+    },
+  ],
+  "@typescript-eslint/no-misused-new": `error`,
   "no-empty-function": `off`,
-  "@typescript-eslint/no-empty-function": `error`,
   "no-extra-parens": `off`,
   "no-unused-vars": `off`,
   "@typescript-eslint/no-unused-vars": [
-    `error`,
+    `warn`,
     {
       vars: `all`,
       args: `after-used`,
       ignoreRestSiblings: true,
-      argsIgnorePattern: `^_$`,
+      argsIgnorePattern: `^_`,
       caughtErrors: `all`,
-      caughtErrorsIgnorePattern: `^_$`,
+      caughtErrorsIgnorePattern: `^_`,
     },
   ],
+  "@typescript-eslint/no-use-before-define": `error`,
+  "@typescript-eslint/no-useless-constructor": `error`,
+  "@typescript-eslint/require-array-sort-compare": `error`,
 };
