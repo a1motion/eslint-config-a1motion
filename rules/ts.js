@@ -1,6 +1,11 @@
 module.exports = {
   "@typescript-eslint/adjacent-overload-signatures": `error`,
-  "@typescript-eslint/array-type": [`error`, `array-simple`],
+  "@typescript-eslint/array-type": [
+    `error`,
+    {
+      default: `array-simple`,
+    },
+  ],
   "@typescript-eslint/ban-types": [
     `error`,
     {

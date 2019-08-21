@@ -10,3 +10,7 @@ if (process.argv.includes(`typescript`)) {
     `yarn add --dev @typescript-eslint/eslint-plugin @typescript-eslint/parser`
   );
 }
+
+if (process.argv.includes(`react`)) {
+  execSync(`yarn add --dev eslint-plugin-react eslint-plugin-react-hooks`);
+}
