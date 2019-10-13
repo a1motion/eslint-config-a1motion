@@ -12,5 +12,5 @@ if (process.argv.includes(`typescript`)) {
 }
 
 if (process.argv.includes(`react`)) {
-  execSync(`yarn add --dev eslint-plugin-react eslint-plugin-react-hooks`);
+  execSync(`yarn add --dev eslint-plugin-react`);
 }

@@ -46,19 +46,6 @@ module.exports = {
       allowTypedFunctionExpressions: true,
     },
   ],
-  "@typescript-eslint/member-delimiter-style": [
-    `error`,
-    {
-      multiline: {
-        delimiter: `semi`,
-        requireLast: true,
-      },
-      singleline: {
-        delimiter: `semi`,
-        requireLast: true,
-      },
-    },
-  ],
   "@typescript-eslint/no-misused-new": `error`,
   "no-empty-function": `off`,
   "no-extra-parens": `off`,
