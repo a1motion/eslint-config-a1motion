@@ -39,13 +39,7 @@ module.exports = {
   camelcase: `off`,
   "@typescript-eslint/camelcase": [`error`, { properties: `always` }],
   "@typescript-eslint/class-name-casing": `error`,
-  "@typescript-eslint/explicit-function-return-type": [
-    `error`,
-    {
-      allowExpressions: true,
-      allowTypedFunctionExpressions: true,
-    },
-  ],
+  "@typescript-eslint/explicit-function-return-type": `off`,
   "@typescript-eslint/no-misused-new": `error`,
   "no-empty-function": `off`,
   "no-extra-parens": `off`,
