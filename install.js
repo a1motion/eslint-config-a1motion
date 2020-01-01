@@ -1,16 +1,34 @@
 #!/usr/bin/env node
 const { execSync } = require(`child_process`);
 
-execSync(
-  `yarn add --dev eslint-formatter-pretty -W && npx install-peerdeps --dev --yarn -x "-W" eslint-config-a1motion`
-);
+const packagesToInstall = [
+  `babel-eslint`,
+  `eslint`,
+  `eslint-config-prettier`,
+  `eslint-plugin-prettier`,
+  `prettier`,
+];
 
 if (process.argv.includes(`typescript`)) {
-  execSync(
-    `yarn add --dev @typescript-eslint/eslint-plugin @typescript-eslint/parser`
+  packagesToInstall.push(
+    `@typescript-eslint/eslint-plugin`,
+    `@typescript-eslint/parser`
   );
 }
 
 if (process.argv.includes(`react`)) {
-  execSync(`yarn add --dev eslint-plugin-react`);
+  packagesToInstall.push(`eslint-plugin-react`);
 }
+
+console.log(
+  `eslint-config-a1motion: Installing packages: ${packagesToInstall
+    .map((a) => `'${a}'`)
+    .join(`, `)}`
+);
+
+execSync(
+  `yarn add --dev ${packagesToInstall.map((pkg) => `${pkg}`).join(` `)}`,
+  {
+    stdio: `inherit`,
+  }
+);
