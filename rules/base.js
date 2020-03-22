@@ -104,7 +104,20 @@ module.exports = {
   "prefer-spread": `error`,
   "prefer-rest-params": `error`,
   "prefer-arrow-callback": `error`,
-  "prefer-destructuring": [`error`],
+  "prefer-destructuring": [
+    `error`,
+    {
+      // https://github.com/xojs/eslint-config-xo/blob/06e4e1416bdbf2df56984adca8039683ebad735c/esnext.js#L28
+      VariableDeclarator: {
+        array: false,
+        object: true,
+      },
+      AssignmentExpression: {
+        array: false,
+        object: false,
+      },
+    },
+  ],
   "no-var": `error`,
   "no-this-before-super": `error`,
   "object-shorthand": `error`,
