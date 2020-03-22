@@ -2,7 +2,7 @@ module.exports = {
   extends: [`prettier`],
   parser: `babel-eslint`,
   parserOptions: {
-    ecmaVersion: 8,
+    ecmaVersion: 2020,
     ecmaFeatures: {
       experimentalObjectRestSpread: true,
       impliedStrict: true,
