@@ -27,7 +27,7 @@ console.log(
 );
 
 execSync(
-  `yarn add --dev ${packagesToInstall.map((pkg) => `${pkg}`).join(` `)}`,
+  `yarn add --dev -W ${packagesToInstall.map((pkg) => `${pkg}`).join(` `)}`,
   {
     stdio: `inherit`,
   }
