@@ -7,6 +7,7 @@ const packagesToInstall = [
   `eslint-config-prettier`,
   `eslint-plugin-prettier`,
   `prettier`,
+  `eslint-formatter-pretty`,
 ];
 
 if (process.argv.includes(`typescript`)) {
