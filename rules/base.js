@@ -84,7 +84,13 @@ module.exports = {
   "no-return-assign": "error",
   "max-len": "off",
   "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"],
-  quotes: ["error", "double"],
+  quotes: [
+    "error",
+    "double",
+    {
+      avoidEscape: true,
+    },
+  ],
   "func-call-spacing": ["error", "never"],
   "func-names": ["error", "as-needed"],
   "comma-spacing": [
