@@ -1,6 +1,6 @@
 module.exports = {
-  extends: [`prettier`],
-  parser: `babel-eslint`,
+  extends: ["prettier"],
+  parser: "babel-eslint",
   parserOptions: {
     ecmaVersion: 2020,
     ecmaFeatures: {
@@ -18,8 +18,8 @@ module.exports = {
     es6: true,
   },
   settings: {},
-  plugins: [`prettier`],
+  plugins: ["prettier"],
   rules: {
-    ...require(`./rules/base`),
+    ...require("./rules/base"),
   },
 };

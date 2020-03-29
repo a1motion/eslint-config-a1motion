@@ -1,12 +1,12 @@
 module.exports = {
-  extends: [`prettier`, `prettier/@typescript-eslint`],
-  parser: `@typescript-eslint/parser`,
+  extends: ["prettier", "prettier/@typescript-eslint"],
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-    sourceType: `module`,
-    project: `tsconfig.json`,
+    sourceType: "module",
+    project: "tsconfig.json",
     warnOnUnsupportedTypeScriptVersion: false,
   },
   env: {
@@ -19,16 +19,16 @@ module.exports = {
   settings: {
     "import/resolver": {
       node: {
-        extensions: [`.js`, `.jsx`, `.ts`, `.tsx`],
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
       },
     },
     "import/parsers": {
-      "@typescript-eslint/parser": [`.ts`, `.tsx`],
+      "@typescript-eslint/parser": [".ts", ".tsx"],
     },
   },
-  plugins: [`prettier`, `@typescript-eslint`],
+  plugins: ["prettier", "@typescript-eslint"],
   rules: {
-    ...require(`./rules/base`),
-    ...require(`./rules/ts`),
+    ...require("./rules/base"),
+    ...require("./rules/ts"),
   },
 };

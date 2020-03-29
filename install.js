@@ -1,35 +1,35 @@
 #!/usr/bin/env node
-const { execSync } = require(`child_process`);
+const { execSync } = require("child_process");
 
 const packagesToInstall = [
-  `babel-eslint`,
-  `eslint`,
-  `eslint-config-prettier`,
-  `eslint-plugin-prettier`,
-  `prettier`,
-  `eslint-formatter-pretty`,
+  "babel-eslint",
+  "eslint",
+  "eslint-config-prettier",
+  "eslint-plugin-prettier",
+  "prettier",
+  "eslint-formatter-pretty",
 ];
 
-if (process.argv.includes(`typescript`)) {
+if (process.argv.includes("typescript")) {
   packagesToInstall.push(
-    `@typescript-eslint/eslint-plugin`,
-    `@typescript-eslint/parser`
+    "@typescript-eslint/eslint-plugin",
+    "@typescript-eslint/parser"
   );
 }
 
-if (process.argv.includes(`react`)) {
-  packagesToInstall.push(`eslint-plugin-react`);
+if (process.argv.includes("react")) {
+  packagesToInstall.push("eslint-plugin-react");
 }
 
 console.log(
   `eslint-config-a1motion: Installing packages: ${packagesToInstall
     .map((a) => `'${a}'`)
-    .join(`, `)}`
+    .join(", ")}`
 );
 
 execSync(
-  `yarn add --dev -W ${packagesToInstall.map((pkg) => `${pkg}`).join(` `)}`,
+  `yarn add --dev -W ${packagesToInstall.map((pkg) => `${pkg}`).join(" ")}`,
   {
-    stdio: `inherit`,
+    stdio: "inherit",
   }
 );
