@@ -38,25 +38,14 @@ module.exports = {
     },
   ],
   camelcase: "off",
-  "@typescript-eslint/naming-convention": [
-    "error",
-    {
-      selector: "default",
-      format: ["camelCase"],
-      leadingUnderscore: "allow",
-      trailingUnderscore: "allow",
-    },
-    {
-      selector: "variable",
-      format: ["camelCase", "UPPER_CASE"],
-      leadingUnderscore: "allow",
-      trailingUnderscore: "allow",
-    },
-    {
-      selector: "typeLike",
-      format: ["PascalCase"],
-    },
-  ],
+  // This rule is too weird and does not make use of the type system.
+  // Generally you should follow the following rules:
+  // Classes, Types, Interfaces, React Components all should use PascalCase.
+  // SQL properties use snake_case, and we do not automatically convert them on the JS end.
+  // Constants should use UPPER_CASE, however this doesn't mean all variables defined with `const`,
+  // this should be restricts to things that are really constants like error codes.
+  // All other variables should use camelCase.
+  "@typescript-eslint/naming-convention": "off",
   "@typescript-eslint/explicit-function-return-type": "off",
   "@typescript-eslint/no-misused-new": "error",
   "no-empty-function": "off",
