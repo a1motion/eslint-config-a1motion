@@ -19,4 +19,9 @@ const react = {
   },
 };
 
+react.rules["@typescript-eslint/naming-convention"].push({
+  selector: "function",
+  format: ["camelCase", "PascalCase"],
+});
+
 module.exports = react;
