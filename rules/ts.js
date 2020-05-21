@@ -38,8 +38,25 @@ module.exports = {
     },
   ],
   camelcase: "off",
-  "@typescript-eslint/camelcase": ["error", { properties: "always" }],
-  "@typescript-eslint/class-name-casing": "error",
+  "@typescript-eslint/naming-convention": [
+    "error",
+    {
+      selector: "default",
+      format: ["camelCase"],
+      leadingUnderscore: "allow",
+      trailingUnderscore: "allow",
+    },
+    {
+      selector: "variable",
+      format: ["camelCase", "UPPER_CASE"],
+      leadingUnderscore: "allow",
+      trailingUnderscore: "allow",
+    },
+    {
+      selector: "typeLike",
+      format: ["PascalCase"],
+    },
+  ],
   "@typescript-eslint/explicit-function-return-type": "off",
   "@typescript-eslint/no-misused-new": "error",
   "no-empty-function": "off",
