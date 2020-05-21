@@ -24,4 +24,8 @@ react.rules["@typescript-eslint/naming-convention"].push({
   format: ["camelCase", "PascalCase"],
 });
 
+react.rules["@typescript-eslint/naming-convention"][2].format.push(
+  "PascalCase"
+);
+
 module.exports = react;
