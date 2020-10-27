@@ -30,7 +30,6 @@ module.exports = {
   "react/no-will-update-set-state": ["error"],
   "react/prefer-es6-class": ["error", "always"],
   "react/prefer-stateless-function": ["error"],
-  "react/react-in-jsx-scope": ["error"],
   "react/require-render-return": ["error"],
   "react/self-closing-comp": ["error", { component: true, html: true }],
   "react/sort-comp": [

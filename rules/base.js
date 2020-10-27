@@ -136,11 +136,12 @@ module.exports = {
     "error",
     {
       trailingComma: "es5",
-      printWidth: 80,
+      printWidth: 120,
       semi: true,
       jsxBracketSameLine: true,
       arrowParens: "always",
       endOfLine: "lf",
+      singleQuote: false,
     },
   ],
   "padding-line-between-statements": [
