@@ -6,11 +6,7 @@ module.exports = {
       children: "ignore",
     },
   ],
-  "react/destructuring-assignment": [
-    "error",
-    "always",
-    { ignoreClassFields: true },
-  ],
+  "react/destructuring-assignment": ["error", "always", { ignoreClassFields: true }],
   "react/display-name": ["warn"],
   "react/no-access-state-in-setstate": ["error"],
   "react/no-array-index-key": ["error"],
@@ -35,16 +31,11 @@ module.exports = {
   "react/sort-comp": [
     "warn",
     {
-      order: [
-        "static-methods",
-        "instance-variables",
-        "lifecycle",
-        "everything-else",
-        "render",
-      ],
+      order: ["static-methods", "instance-variables", "lifecycle", "everything-else", "render"],
     },
   ],
   "react/style-prop-object": ["error"],
   "react/prop-types": ["off"],
   "react/void-dom-elements-no-children": ["error"],
+  "react/react-in-jsx-scope": ["off"],
 };
