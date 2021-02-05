@@ -32,8 +32,7 @@ module.exports = {
         },
         object: "Use `{}` instead.",
         Function: "Use a specific function type instead, like `() => void`.",
-        Omit:
-          "Prefer the `Except` type in the `type-fest` package instead as it's stricter.",
+        Omit: "Prefer the `Except` type in the `type-fest` package instead as it's stricter.",
       },
     },
   ],
