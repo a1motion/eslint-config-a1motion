@@ -1,5 +1,11 @@
+const path = require("path");
+
+const prettierConfig = Number(
+  require(path.join(path.dirname(require.resolve("eslint-config-prettier")), "package.json")).version.split(".")[0]
+);
+
 module.exports = {
-  extends: ["prettier", "prettier/@typescript-eslint"],
+  extends: ["prettier", prettierConfig < 8 && "prettier/@typescript-eslint"].filter(Boolean),
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaFeatures: {
