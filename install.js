@@ -2,7 +2,8 @@
 const { execSync } = require("child_process");
 
 const packagesToInstall = [
-  "babel-eslint",
+  "@babel/eslint-parser",
+  "@babel/core",
   "eslint",
   "eslint-config-prettier",
   "eslint-plugin-prettier",

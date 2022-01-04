@@ -172,4 +172,5 @@ module.exports = {
       next: "*",
     },
   ],
+  "sort-imports": ["error"],
 };
